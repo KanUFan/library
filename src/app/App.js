@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { BooksList } from "./features/books/BooksList";
+import { BooksList } from "@features";
 
 function App() {
     return (

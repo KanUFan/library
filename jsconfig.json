@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": false,
+        "baseUrl": "./",
+        "paths": {
+            "@": ["src"],
+            "@/*": ["src/*"],
+            "@features": ["src/features"],
+            "@features/*": ["src/features/*"]
+        }
+    },
+    "exclude": ["node_modules"]
+}

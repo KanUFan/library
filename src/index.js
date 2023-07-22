@@ -1,14 +1,21 @@
+//third-party
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import store from "./app/store";
-import "./firebase";
-import ErrorPage from "./error-page";
+//store
+import store from "@app/store";
+import "@app/firebase";
+
+//app
+import "@app/index.css";
+import App from "@app/App";
+import ErrorPage from "@views/Errors/error-page";
+
+//metrics
+import reportWebVitals from "@app/reportWebVitals";
+
 
 const router = createBrowserRouter([
     { path: "/", element: <App />, errorElement: <ErrorPage /> },

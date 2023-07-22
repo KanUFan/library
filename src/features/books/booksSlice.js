@@ -1,6 +1,8 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { storage } from "../../firebase";
 import { getDownloadURL, ref } from "firebase/storage";
+
+import { storage } from "@app/firebase";
+
 
 const initialState = {
     books: [],
@@ -38,4 +40,4 @@ export const booksSlice = createSlice({
 
 export const selectAllBooks = state => state.books.books
 
-export default booksSlice.reducer;
+export const BooksReducer = booksSlice.reducer;

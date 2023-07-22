@@ -8,9 +8,6 @@ html {
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     height: 100%;
@@ -21,5 +18,5 @@ body {
 #root-body {
     height: 100%;
     background-color: rgb(52, 56, 59);
-    padding: 25px 50px;
+    padding: 1.5rem 4%;
 }

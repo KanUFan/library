@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+
 import { fetchBooks, selectAllBooks } from "./booksSlice";
+
 
 export const BooksList = () => {
     const dispatch = useDispatch();
@@ -28,5 +30,5 @@ export const BooksList = () => {
         content = <div>{error}</div>;
     }
 
-    return <>{content}{content}{content}{content}</>;
+    return <>{content}{window.devicePixelRatio}</>;
 };
